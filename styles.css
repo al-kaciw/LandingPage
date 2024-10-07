@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    background-color: #1f2937;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 45vh;
+    padding: 30px 0;
+}
+
+nav {
+    width: 80%;
+    justify-content: space-between;
+}
+
+nav > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+}
+
+nav > ul {
+    list-style-type: none
+}
+
+nav li {
+    padding: 0 20px;
+    color: #e5e7eb;
+}
+
+nav a {
+    color: inherit; /* Inherits the color from the parent element */
+    text-decoration: none; /* Removes underline if you don't want it */
+}
+
+.hero {
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.hero > div {
+    width: 50%;
+}
+
+.hero > img {
+    width: 400px;
+    height: 250px;
+}
+
+.hero_text {
+    flex-direction: column;
+}
+
+.hero_text > h1 {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+.hero_text > p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
