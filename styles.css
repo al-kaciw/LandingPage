@@ -1,74 +1,84 @@
-body {
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: "Roboto";
 }
 
-.flex {
+.flexr {
     display: flex;
+    flex-direction: row;
+    /*border: 2px solid red;*/
+}
+
+.flexc {
+    display: flex;
+    flex-direction: column;
+    /*border: 2px solid blue;*/
+}
+
+.container {
+    height: 100%;
+    width: 100%;
 }
 
 header {
     background-color: #1f2937;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    height: 45vh;
     padding: 30px 0;
+    align-items: center;
+    justify-content: center;
 }
 
-nav {
+.hero_container {
     width: 80%;
+}
+
+.hero_container > nav {
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 nav > img {
-    width: 80px;
-    height: 80px;
-    border-radius: 100px;
+    width: 40px;
+    height: auto;
 }
 
-nav > ul {
-    list-style-type: none
-}
-
-nav li {
-    padding: 0 20px;
+nav > .navbar {
+    list-style-type: none;
     color: #e5e7eb;
+    font-size: 18px;
+    position: sticky;
 }
 
-nav a {
-    color: inherit; /* Inherits the color from the parent element */
-    text-decoration: none; /* Removes underline if you don't want it */
+.navbar > li {
+    padding: 0 10px;
 }
 
 .hero {
-    flex-direction: row;
-    width: 80%;
     justify-content: space-between;
 }
 
-.hero > div {
-    width: 50%;
-}
+.hero > .hero_text {
+    flex-basis: 50%;
+    
+} 
 
 .hero > img {
     width: 400px;
-    height: 250px;
-}
-
-.hero_text {
-    flex-direction: column;
+    height: 150px;
 }
 
 .hero_text > h1 {
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
+    margin-bottom: 10px;
 }
 
 .hero_text > p {
-    font-size: 18px;
     color: #e5e7eb;
+    font-size: 18px;
 }
