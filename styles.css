@@ -25,7 +25,7 @@ body {
     width: 100%;
 }
 
-header {
+header, footer {
     background-color: #1f2937;
     padding: 30px 0;
     align-items: center;
@@ -81,4 +81,58 @@ nav > .navbar {
 .hero_text > p {
     color: #e5e7eb;
     font-size: 18px;
+}
+
+
+/* Main  */
+
+main {
+    align-items: center;
+}
+.biografi {
+    background-color: #e5e7eb;
+    align-items: center;
+}
+
+.biografi > div {
+    width: 70%;
+    text-align: center;
+    font-size: 24px;
+    color: #1f2937;
+    padding: 20px;
+}
+
+.biografi > div > #text {
+    padding: 10px;
+    text-align: end;
+}
+
+.project {
+    width: 70%;
+    text-align: center;
+    font-size: 24px;
+    color: #1f2937;
+    padding: 20px;
+}
+
+.portopolio {
+    width: 70%;
+    align-items: center;
+    font-size: 24px;
+    color: #1f2937;
+    padding: 20px;
+}
+
+.portopolio > div {
+    margin: 10px;
+    width: 80%;
+    justify-content: space-around;
+}
+
+
+/* Footer */ 
+footer {
+    font-size: 20px;
+    color: #e5e7eb;
+    justify-content: space-evenly;
 }
